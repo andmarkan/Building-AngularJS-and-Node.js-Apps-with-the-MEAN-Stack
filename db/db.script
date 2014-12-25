@@ -1,0 +1,9 @@
+// 02. Creating a Walking Skeleton : 10. Displaying Data in a View
+
+mongo
+use multivision
+db.messages.insert({ message: 'Hello Mongo' })
+show collections
+
+db.messages.count()
+db.messages.find()
