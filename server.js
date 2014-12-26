@@ -39,10 +39,6 @@ var Message = mongoose.model('Message', messageSchema);
 var mongoMessage;
 
 
-// Message.findOne().exec(function(err, messageDoc){
-//     mongoMessage = messageDoc.message;
-// });
-
 Message.findOne().exec(function(err, messageDoc){
     mongoMessage = messageDoc.message;
 });
@@ -57,6 +53,6 @@ app.get('*', function(req, res){
     });
 });
 
-var port = 8080;
+var port = process.env.PORT || 8080;
 app.listen(port);
 console.log('Listening on port ' + port + '...');
