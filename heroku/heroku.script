@@ -1,0 +1,12 @@
+
+// 03. Deploying to Heroku : 04. Pushing to Heroku
+
+heroku login
+heroku create
+git remote -v
+
+herodu config:set NODE_ENV=production
+git push heroku master
+
+heroku ps:scale web=1
+heroku open
