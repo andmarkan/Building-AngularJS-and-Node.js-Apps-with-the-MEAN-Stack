@@ -1,6 +1,19 @@
 extends ../includes/layout
 
 block main-content
-    section.content
-        div(ng-view)
+  .navbar.navbar-inverse.navbar-fixed-top
+    .container
+      .navbar-header
+        a.navbar-brand(href="/") Multivision
+          h6 -Extreme Tech Training
+      .navbar-collapse.collapse
+        ul.nav.navbar-nav
+          li
+            a(href="/") Home
+
+  section.content
+    div(ng-view)
     h2= mongoMessage
+
+    footer.container.text-center
+        p &copy; 2013 Multivision Corp International Ltd.

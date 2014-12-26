@@ -5,8 +5,21 @@ heroku login
 heroku create
 git remote -v
 
-herodu config:set NODE_ENV=production
+heroku config:set NODE_ENV=production
 git push heroku master
 
 heroku ps:scale web=1
 heroku open
+
+// 03. Deploying to Heroku : 05. General Heroku Troubleshooting
+
+heroku logs
+heroku restart
+
+
+// 03. Deploying to Heroku : 06. Managing and Troubleshooting Heroku Keys
+
+heroku keys
+heroku keys:add
+heroku keys:clear
+heroku keys:remove
