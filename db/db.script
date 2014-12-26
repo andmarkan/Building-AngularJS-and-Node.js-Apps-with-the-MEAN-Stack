@@ -7,3 +7,11 @@ show collections
 
 db.messages.count()
 db.messages.find()
+
+
+// 03. Deploying to Heroku : 03. Heroku and MongoDB
+
+mongo ds043200.mongolab.com:43200/multivision -u marley -p multivision
+
+db.messages.insert({ message: 'Hello From MongoLab' })
+show collections
