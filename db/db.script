@@ -21,5 +21,14 @@ show collections
 
 mongo
 use multivision
-db.users.remove()
+db.users.remove({})
 db.users.find()
+
+
+// 06. Security and Authorization : 02. Implementing Secure Passwords 
+
+mongo
+use multivision
+db.users.remove({})
+db.users.find()
+
