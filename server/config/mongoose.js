@@ -31,16 +31,16 @@ module.exports = function(config){
         if(collection.length === 0){
             var salt, hash;
             salt = createSalt();
-            hash - hashPwd(salt, 'joe');
-            User.create({firstName: 'Joe', lastName: 'James', username: 'joe', salt: salt, hashed_pwd: hash});
+            hash = hashPwd(salt, 'joe');
+            User.create({firstName:'Joe', lastName:'James', username:'joe', salt: salt, hashed_pwd: hash});
 
             salt = createSalt();
-            hash - hashPwd(salt, 'john');
-            User.create({firstName: 'John', lastName: 'Papa', username: 'john', salt: salt, hashed_pwd: hash});
+            hash = hashPwd(salt, 'john');
+            User.create({firstName:'John', lastName:'Papa', username:'john', salt: salt, hashed_pwd: hash});
 
             salt = createSalt();
-            hash - hashPwd(salt, 'dan');
-            User.create({firstName: 'Dan', lastName: 'Wahlin', username: 'dan', salt: salt, hashed_pwd: hash});
+            hash = hashPwd(salt, 'dan');
+            User.create({firstName:'Dan', lastName:'Wahlin', username:'dan', salt: salt, hashed_pwd: hash});
         }
     })
 }
