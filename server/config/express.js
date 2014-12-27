@@ -1,5 +1,6 @@
 var express  = require('express'),
-stylus   = require('stylus');
+    stylus   = require('stylus'),
+    passport = require('passport');
 
 
 module.exports = function(app, config){
@@ -12,7 +13,11 @@ module.exports = function(app, config){
         app.set('views', config.rootPath + '/server/views');
         app.set('view engine', 'jade');
         app.use(express.logger('dev'));
+        app.use(express.cookieParser());
         app.use(express.bodyParser());
+        app.use(express.session({ secret: 'multivision unicorns' }));
+        app.use(passport.initialize());
+        app.use(passport.session());
         app.use(stylus.middleware(
             {
                 src: config.rootPath + '/public',

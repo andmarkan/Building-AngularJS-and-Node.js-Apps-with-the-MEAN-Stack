@@ -20,7 +20,7 @@ module.exports = function(config){
 
     User.find({}).exec(function(err, collection){
         if(collection.length === 0){
-            User.create({firstName: 'Joe', lastName: 'Eames', username: 'joe'});
+            User.create({firstName: 'Joe', lastName: 'James', username: 'joe'});
             User.create({firstName: 'John', lastName: 'Papa', username: 'john'});
             User.create({firstName: 'Dan', lastName: 'Wahlin', username: 'dan'});
         }
