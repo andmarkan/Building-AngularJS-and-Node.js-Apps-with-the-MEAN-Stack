@@ -15,3 +15,11 @@ mongo ds043200.mongolab.com:43200/multivision -u marley -p multivision
 
 db.messages.insert({ message: 'Hello From MongoLab' })
 show collections
+
+
+// 05. Authentication : 04. Preparing for Login
+
+mongo
+use multivision
+db.users.remove()
+db.users.find()
