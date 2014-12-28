@@ -25,10 +25,18 @@ db.users.remove({})
 db.users.find()
 
 
-// 06. Security and Authorization : 02. Implementing Secure Passwords 
+// 06. Security and Authorization : 02. Implementing Secure Passwords
 
 mongo
 use multivision
 db.users.remove({})
 db.users.find()
 
+
+
+// 06. Security and Authorization : 06. Implementing Clientside Authorization
+
+mongo
+use multivision
+db.users.remove({})
+db.users.find()
