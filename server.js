@@ -43,7 +43,6 @@ passport.deserializeUser(function(id, done){
     })
 });
 
-
 require('./server/config/routes')(app);
 
 app.listen(config.port);
